@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 8px;
+          text-justify: distribute;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ 
+<title>Contar Checkbox Activos</title>
+
+</head>
+<body>
+<script type="text/javascript" src="js/tunumero.js"></script>
+
+<h1>¡Piensa un número y lo adivinaré!</h1>
+<table>
+    <tr>
+      <td><img src="img/cero.png" alt="cero" width="150" height="200"> 
+      </td>
+      <td><img src="img/cuatro.png" alt="cuatro" width="150" height="200"> 
+        <input type="checkbox" name="cuatro" id="4" value=4> Si<br/></td>
+      <td><img src="img/ocho.png" alt="ocho" width="150" height="200"> 
+        <input type="checkbox" name="ocho" id="8" value=8> Si<br/></td>
+    </tr>
+    <tr>
+      <td><img src="img/uno.png" alt="uno" width="150" height="200"> 
+        <input type="checkbox" name="uno" id="1" value=1> Si<br/></td>
+      <td><img src="img/dos.png" alt="dos" width="150" height="200"> 
+        <input type="checkbox" name="dos" id="2" value=2> Si<br/></td>
+      <td><img src="img/dieciseis.png" alt="16" width="150" height="200"> 
+        <input type="checkbox" name="16" id="16" value=16> Si<br/></td>
+    </tr>
+
+  </table>
+
+<script type="text/javascript">
+    
+    if(document.getElementById('4').checked == true) {   
+        var Cuatro = 4;
+        } 
+    if (document.getElementById('4').checked == false) {  
+        var Cuatro = 0;
+        }     
+    if(document.getElementById('8').checked == true) {   
+        var Ocho = 8;
+        } 
+    if (document.getElementById('8').checked == false) {  
+        var Ocho = 0;
+    }
+    if(document.getElementById('1').checked == true) {   
+        var Uno = 1;
+        } 
+    if (document.getElementById('1').checked == false) {  
+        var Uno = 0;
+        }     
+    if(document.getElementById('2').checked == true) {   
+        var Dos = 2;
+        } 
+    if (document.getElementById('2').checked == false) {  
+        var Dos = 0;
+    }
+    if(document.getElementById('16').checked == true) {   
+        var Dieciseis = 16;
+        } 
+    if (document.getElementById('16').checked == false) {  
+        var Dieciseis = 0;
+    }
+
+    sumados = parseInt(Cuatro) + parseInt(Ocho)+parseInt(Uno) + parseInt(Dos)+ parseInt(Dieciseis);
+   
+   document.write("El número que elegiste es el... : " + sumados);
+</script>
+
+<br><br>
+<hr>
+<p>Crea números aleatorios entre 1 a 30</p>https://pinetools.com/es/generador-numeros-aleatorios
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MVDngP6ZXGM?start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
